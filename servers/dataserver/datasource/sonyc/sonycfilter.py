@@ -48,6 +48,7 @@ class SONYCFilter:
     def filter_snippets_by_days( days ):
 
         ## days: [ 2017-01-13 ]
+        # snippets = glob.glob(f'{SONYCCONSTS["AUDIO_SNIPPETS_BASEPATH"]}/s321/{days[0].strip()}/*')
         snippets = glob.glob(f'{SONYCCONSTS["AUDIO_SNIPPETS_BASEPATH"]}/saf7/{days[0].strip()}/*')
         
         return SONYCFilter.format_snippet_objs( snippets )

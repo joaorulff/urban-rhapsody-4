@@ -74,8 +74,6 @@ export class OverviewViewController {
 
         // selecting points that were retrieved by ann     
         let uids: string[] = this.dataState.yearAudioDistribution[event.day].frames;   
-        // console.log(uids);
-        // console.log(Object.keys(this.dataState.indexedFrames));
         
 
         this.dataState.select_frames( { filtertype: 'uids', uids } );
@@ -90,7 +88,7 @@ export class OverviewViewController {
         this.sidebarController.on_day_loaded( this.dataState.selectedFrames );
 
         // calculating cluster tree
-        this.clusteringState.generate_cluster_tree( Object.values(this.dataState.indexedFrames)  );
+        // this.clusteringState.generate_cluster_tree( Object.values(this.dataState.indexedFrames)  );
         
         
     }

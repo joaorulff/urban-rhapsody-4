@@ -9,8 +9,8 @@ export class SensorMapController {
     // sonycnode-b827eb0d8af7.sonyc 40.729432	-73.993588
 
     private sensors: { 'id': string, 'lat': number, 'lng': number, 'marker': google.maps.Marker | null }[] = [
-        { 'id': 'sonycnode-b827eb0d8af7.sonyc', 'lat': 40.729432, 'lng': -73.993588, 'marker': null }
-        // { 'id': 'sonycnode-b827eb815321.sonyc', 'lat': 40.73189, 'lng': -73.997708, 'marker': null }
+        // { 'id': 'sonycnode-b827eb0d8af7.sonyc', 'lat': 40.729432, 'lng': -73.993588, 'marker': null }
+        { 'id': 'sonycnode-b827eb815321.sonyc', 'lat': 40.73189, 'lng': -73.997708, 'marker': null }
     ];
 
     constructor(){}
